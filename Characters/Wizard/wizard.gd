@@ -1,4 +1,4 @@
-extends "res://Characters/BasicPlayerMovement.gd"
+extends "res://Characters/CompostionScripts/BasicPlayerMovement.gd"
 
 func _physics_process(_delta: float) -> void:
 	var input_direction : Vector2 = inputHandling()

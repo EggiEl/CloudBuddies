@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://fdxtsxy4y176"]
 
-[ext_resource type="Script" uid="uid://bng8jm41iq3so" path="res://Characters/wizard.gd" id="1_cjk2f"]
-[ext_resource type="Texture2D" uid="uid://cd8idvywq4pkt" path="res://icon.svg" id="2_bmaos"]
+[ext_resource type="Script" uid="uid://bng8jm41iq3so" path="res://Characters/Wizard/wizard.gd" id="1_3p0g4"]
+[ext_resource type="Texture2D" uid="uid://cd8idvywq4pkt" path="res://icon.svg" id="2_dt0gt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rhnc7"]
 size = Vector2(146, 143)
@@ -9,13 +9,12 @@ size = Vector2(146, 143)
 [node name="Wizard" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-script = ExtResource("1_cjk2f")
+script = ExtResource("1_3p0g4")
 speed = 800.0
-friction = null
 
 [node name="Icon" type="Sprite2D" parent="CharacterBody2D"]
 position = Vector2(61, 58)
-texture = ExtResource("2_bmaos")
+texture = ExtResource("2_dt0gt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(63, 61.5)

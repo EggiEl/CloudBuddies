@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://b8wki061ppqyy"]
 
-[ext_resource type="Script" uid="uid://ddkufwytpm8aj" path="res://Characters/Engenner.gd" id="1_om3e4"]
-[ext_resource type="Texture2D" uid="uid://cd8idvywq4pkt" path="res://icon.svg" id="2_dok1m"]
+[ext_resource type="Script" uid="uid://ddkufwytpm8aj" path="res://Characters/Engenner/Engenner.gd" id="1_r1nkv"]
+[ext_resource type="Texture2D" uid="uid://cd8idvywq4pkt" path="res://icon.svg" id="2_4q3dk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5r2dc"]
 size = Vector2(146, 143)
@@ -9,11 +9,12 @@ size = Vector2(146, 143)
 [node name="Engeneer" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-script = ExtResource("1_om3e4")
+script = ExtResource("1_r1nkv")
+speed = 800.0
 
 [node name="Icon" type="Sprite2D" parent="CharacterBody2D"]
 position = Vector2(61, 58)
-texture = ExtResource("2_dok1m")
+texture = ExtResource("2_4q3dk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(63, 61.5)
